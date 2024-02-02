@@ -32,6 +32,13 @@ login_close_btn.addEventListener("click", () => {
 
 /*=============== ADD SHADOW HEADER ===============*/
 
+window.addEventListener("scroll", () => {
+  const header = document.querySelector(".header");
+  this.scrollY >= 50
+    ? header.classList.add("active-header")
+    : header.classList.remove("active-header");
+});
+
 /*=============== HOME SWIPER ===============*/
 
 const swiper = new Swiper(".home-swiper", {

@@ -266,6 +266,10 @@ img {
   top: 0;
 }
 
+.active-header {
+  box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.1);
+}
+
 /*=============== LOGIN ===============*/
 
 .login {
@@ -419,6 +423,24 @@ img {
 /*=============== BUTTON ===============*/
 
 /*=============== SERVICES ===============*/
+
+.services-container {
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.service {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+
+.service .icon {
+  color: blue;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
 
 /*=============== FEATURED ===============*/
 
