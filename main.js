@@ -80,6 +80,31 @@ const featured_swiper = new Swiper(".featured-swiper", {
 });
 /*=============== NEW SWIPER ===============*/
 
+let swiperNew1 = new Swiper(".new-swiper-1", {
+  loop: true,
+  spaceBetween: 16,
+
+  slidesPerView: "auto",
+
+  breakpoints: {
+    1150: {
+      slidesPerView: 3,
+    },
+  },
+});
+
+let swiperNew2 = new Swiper(".new-swiper-2", {
+  loop: true,
+  spaceBetween: 16,
+
+  slidesPerView: "auto",
+
+  breakpoints: {
+    1150: {
+      slidesPerView: 3,
+    },
+  },
+});
 /*=============== TESTIMONIAL SWIPER ===============*/
 
 /*=============== SHOW SCROLL UP ===============*/
