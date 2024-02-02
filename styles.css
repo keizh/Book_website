@@ -448,13 +448,133 @@ img {
 
 /*=============== DISCOUNT ===============*/
 
+.discount-top-part {
+  display: grid;
+  justify-content: center;
+  gap: 2rem;
+  text-align: center;
+}
+
+.discount-top-part p {
+  font-size: 0.85rem;
+}
+
+.discount-top-part a {
+  background-color: rgb(79, 79, 219);
+  color: white;
+  /* width: 30%; */
+  padding: 10px 20px;
+  margin-inline: auto;
+  margin-bottom: 50px;
+}
+
+.discount-bottom-part {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.discount-bottom-part img {
+  width: 150px;
+  display: inline-block;
+}
+
+.discount-bottom-part img:first-child {
+  transform: translateX(1rem) rotate(-15deg);
+}
+
+.discount-bottom-part img:last-child {
+  transform: translateX(-1rem) rotate(15deg);
+}
 /*=============== NEW ===============*/
 
 /*=============== JOIN ===============*/
+.join {
+  background-image: url("./assets/img/join-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.join-container {
+  display: grid;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.join-container h1 {
+  color: white;
+}
+
+.join-form input {
+  width: 250px;
+  padding: 0.8rem 0.7rem;
+}
+
+.join-form input[type="submit"] {
+  background-color: rgb(107, 107, 247);
+  color: white;
+  margin-bottom: 50px;
+}
 
 /*=============== TESTIMONIAL ===============*/
 
 /*=============== FOOTER ===============*/
+
+.footer {
+  padding-block: 2rem 6rem;
+}
+
+.footer-logo {
+  font-size: 1rem;
+  color: var(--first-color);
+}
+
+.footer-description {
+  font-size: 0.85rem;
+}
+
+.About-Campany {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.About-Campany h1 {
+  font-size: 1.25rem;
+}
+
+.About-Campany li {
+  font-size: 0.8rem;
+  margin-block: 0.5rem;
+}
+
+.Contact-Social {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.Contact-Social h1 {
+  font-size: 1.25rem;
+}
+
+.Contact-Social li {
+  font-size: 0.8rem;
+  margin-block: 0.5rem;
+}
+
+.Social {
+  display: flex;
+  gap: 1rem;
+}
+
+.Social i {
+  margin-top: 0.65rem;
+}
+
+.rights {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /*=============== SCROLL BAR ===============*/
 
