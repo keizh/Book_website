@@ -444,6 +444,86 @@ img {
 
 /*=============== FEATURED ===============*/
 
+.slide-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.247);
+  padding-block: 30px;
+  /* padding-inline: 10rem; */
+  border-radius: 5px;
+  background-color: var(--white);
+  position: relative;
+  /* width: fit-content; */
+}
+
+.slide-grid:hover .featured-actions {
+  right: 5%;
+}
+
+.featured-actions {
+  display: inline-flex;
+  flex-direction: column;
+  position: absolute;
+  top: 7%;
+  right: -100%;
+  gap: 0.4rem;
+  transition: right 0.4s;
+}
+
+.featured-actions i {
+  transition: transform 0.4s;
+}
+
+.featured-actions i:hover {
+  color: var(--first-color);
+  cursor: pointer;
+  scale: 1.25;
+}
+
+.slide-grid img {
+  width: 150px;
+}
+
+.slide-grid h4 {
+  font-size: 1rem;
+  margin-block: 1rem;
+}
+
+.slide-grid h6 {
+  font-size: 0.75rem;
+}
+
+.slide-grid span {
+  font-size: 0.7rem;
+  text-decoration: line-through;
+  margin-left: 0.5rem;
+}
+
+.slide-grid a {
+  color: white;
+  background-color: rgb(108, 108, 228);
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  margin-inline: auto;
+}
+
+.swiper-button-prev::after {
+  content: "";
+}
+
+.swiper-button-next::after {
+  content: "";
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  font-size: 3rem;
+  /* background: orange; */
+  /* padding: 1.2rem; */
+  /* border-radius: 100px; */
+}
 /* Swiper class */
 
 /*=============== DISCOUNT ===============*/

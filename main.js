@@ -60,7 +60,24 @@ const swiper = new Swiper(".home-swiper", {
 });
 
 /*=============== FEATURED SWIPER ===============*/
+const featured_swiper = new Swiper(".featured-swiper", {
+  loop: true,
+  spaceBetween: 16,
+  grabCursor: true,
+  slidesPerView: "auto",
+  centeredSlides: "auto",
 
+  breakpoints: {
+    1150: {
+      slidesPerView: 4,
+      centeredSlides: false,
+    },
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 /*=============== NEW SWIPER ===============*/
 
 /*=============== TESTIMONIAL SWIPER ===============*/
