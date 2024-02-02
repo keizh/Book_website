@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FAVICON ===============-->
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
+
+    <!--=============== REMIXICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
+    />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="./swiper-bundle.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Responsive book website - Bedimcode</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="navigation container">
+        <div class="nav-logo">
+          <i class="ri-book-3-line"></i> <span>E-Book</span>
+        </div>
+        <div class="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#Home">
+                <span class="nav-item-icon"><i class="ri-home-line"></i></span>
+                <span class="nav-item-name">Home</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#Featured">
+                <span class="nav-item-icon"
+                  ><i class="ri-book-3-line"></i
+                ></span>
+                <span class="nav-item-name">#Featured</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#Discount">
+                <span class="nav-item-icon"
+                  ><i class="ri-price-tag-3-line"></i
+                ></span>
+                <span class="nav-item-name">Discount</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#New_Books">
+                <span class="nav-item-icon"
+                  ><i class="ri-bookmark-line"></i
+                ></span>
+                <span class="nav-item-name">New Books</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#Testimonial">
+                <span class="nav-item-icon"
+                  ><i class="ri-chat-1-line"></i
+                ></span>
+                <span class="nav-item-name">Testimonial</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-actions">
+          <i class="ri-search-line search-btn"></i>
+          <i class="ri-user-line login-btn"></i>
+          <i class="ri-moon-line theme-icon"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== SEARCH ====================-->
+    <div class="search" id="search-content">
+      <form action="" id="form-search" class="container">
+        <label for="form-search-input"><i class="ri-search-line"></i></label>
+
+        <input
+          type="text"
+          id="form-search-input"
+          placeholder="search over here..."
+        />
+      </form>
+      <i class="ri-close-line form-close-btn"></i>
+    </div>
+
+    <!--==================== LOGIN ====================-->
+    <div class="login grid" id="login-content">
+      <form action="" class="login-form">
+        <h3 class="login-statement">Log In</h3>
+        <div class="form-inputs">
+          <div class="form-input">
+            <label for="form-email" class="login-form-input-label">Email</label>
+            <input type="text" id="form-email" placeholder="Write your email" />
+          </div>
+          <div class="form-input">
+            <label for="form-password" class="login-form-input-label"
+              >Password</label
+            >
+            <input
+              type="text"
+              id="form-password"
+              placeholder="Enter your password"
+            />
+          </div>
+        </div>
+        <div class="form-conditions">
+          <a href="#"><span>You do not have an account ? </span>Sign up</a>
+          <a href="#">You forgot your password</a>
+        </div>
+        <button type="submit" class="btn-submit">Log In</button>
+      </form>
+      <div class="close-btn-block">
+        <i class="ri-close-line" id="close-btn-block"></i>
+      </div>
+    </div>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home-container container grid">
+          <div class="home-part1">
+            <h1 class="home__title">
+              Browse & <br />
+              Select E-Books
+            </h1>
+
+            <p class="home__description">
+              Find the best e-books from your favorite writers, explore hundreds
+              of books with all possible categories, take advantage of the 50%
+              discount and much more.
+            </p>
+
+            <a href="#" class="explore-now-btn">Expore Now</a>
+          </div>
+
+          <div class="home-part2 home-images">
+            <div class="home-swiper swiper">
+              <div class="swiper-wrapper">
+                <article class="swiper-slide home-article">
+                  <img
+                    src="./assets/img/home-book-1.png"
+                    class="home-image"
+                    alt=""
+                  />
+                </article>
+                <article class="swiper-slide home-article">
+                  <img
+                    src="./assets/img/home-book-2.png"
+                    class="home-image"
+                    alt=""
+                  />
+                </article>
+                <article class="swiper-slide home-article">
+                  <img
+                    src="./assets/img/home-book-3.png"
+                    class="home-image"
+                    alt=""
+                  />
+                </article>
+                <article class="swiper-slide home-article">
+                  <img
+                    src="./assets/img/home-book-4.png"
+                    class="home-image"
+                    alt=""
+                  />
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== SERVICES ====================-->
+      <section class="services section"></section>
+
+      <!--==================== FEATURED ====================-->
+      <section class="featured section" id="featured"></section>
+
+      <!--==================== DISCOUNT ====================-->
+      <section class="discount section" id="discount"></section>
+
+      <!--==================== NEW BOOKS ====================-->
+      <section class="new section" id="new"></section>
+
+      <!--==================== JOIN ====================-->
+      <section class="join section"></section>
+
+      <!--==================== TESTIMONIAL ====================-->
+      <section class="testimonial section" id="testimonial"></section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer"></footer>
+
+    <!--========== SCROLL UP ==========-->
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src=""></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="./swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="main.js"></script>
+  </body>
+</html>
