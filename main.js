@@ -107,6 +107,19 @@ let swiperNew2 = new Swiper(".new-swiper-2", {
 });
 /*=============== TESTIMONIAL SWIPER ===============*/
 
+let testimonyNew1 = new Swiper(".testimonial-swiper", {
+  loop: true,
+  spaceBetween: 16,
+
+  slidesPerView: "auto",
+
+  breakpoints: {
+    1150: {
+      slidesPerView: 3,
+    },
+  },
+});
+
 /*=============== SHOW SCROLL UP ===============*/
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
