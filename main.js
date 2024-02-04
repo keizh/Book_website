@@ -130,6 +130,28 @@ scrollup.addEventListener("click", () => {
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
+const sections = document.querySelectorAll("section[id]");
+// console.log(sections);
+window.addEventListener("scroll", (e) => {
+  const scrollDown = window.scrollY;
+
+  sections.forEach((section) => {
+    const sectionht = section.offsetHeight;
+    const sectiontop = section.offsetTop - 50.67;
+    const sectionid = section.getAttribute("id");
+    // console.log(sectionid);
+    const sectionlink = document.querySelector(
+      `.nav-menu a[href*="${sectionid}"]`
+    );
+    console.log(sectionlink);
+    if (scrollDown > sectiontop && scrollDown <= sectiontop + sectionht) {
+      sectionlink.classList.add("active-link");
+    } else {
+      sectionlink.classList.remove("active-link");
+    }
+  });
+});
+
 /*=============== DARK LIGHT THEME ===============*/
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/

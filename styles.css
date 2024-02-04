@@ -173,6 +173,7 @@ img {
 .nav-item-icon i {
   font-size: 1.2rem;
   color: var(--text-color);
+  transition: font-size 0.4s;
 }
 
 .nav-item i:hover {
@@ -217,6 +218,17 @@ img {
 /* Add shadow header */
 
 /* Active link */
+
+.active-link {
+  color: blue;
+  /* font-size: 1.5rem; */
+}
+
+.active-link .nav-item-icon i {
+  color: blue;
+  transform: scale(1.5);
+  /* font-size: 1.3rem; */
+}
 
 /*=============== SEARCH ===============*/
 
@@ -755,20 +767,50 @@ img {
   border: 1px solid rgb(0, 0, 0, 0.1);
   border-radius: 5px;
   background-color: rgb(255, 255, 255, 0.6);
+  cursor: pointer;
 }
 
 .up-arrow i {
   font-size: 1.5rem;
+  /* transition: transform 0.4s; */
 }
 
 .up-arrow:hover {
   background-color: rgb(255, 255, 255, 1);
 }
 
+.up-arrow:hover i {
+  transform: translateY(-100%);
+}
+
 /* Show Scroll Up */
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
+@media screen and (max-width: 320px) {
+  .container {
+    margin-inline: 0.5rem;
+  }
+  .new-slide-grid {
+    width: 280px;
+  }
+  .new-slide-grid img {
+    width: 100px;
+  }
+
+  .testimonial-swiper-slide {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+  }
+
+  .testimony {
+    width: 280px;
+    padding-inline: 1rem;
+  }
+}
 
 /* For medium devices */
 
