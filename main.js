@@ -122,6 +122,12 @@ let testimonyNew1 = new Swiper(".testimonial-swiper", {
 
 /*=============== SHOW SCROLL UP ===============*/
 
+const scrollup = document.querySelector(".up-arrow");
+
+scrollup.addEventListener("click", () => {
+  window.scroll(0, 0);
+});
+
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
 /*=============== DARK LIGHT THEME ===============*/

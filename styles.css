@@ -742,6 +742,29 @@ img {
 
 /*=============== SCROLL UP ===============*/
 
+.up-arrow {
+  display: flex-inline;
+  align-items: center;
+  justify-content: center;
+
+  position: fixed;
+  padding: 0.5rem;
+  bottom: 15%;
+  right: 8%;
+  z-index: 100;
+  border: 1px solid rgb(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255, 0.6);
+}
+
+.up-arrow i {
+  font-size: 1.5rem;
+}
+
+.up-arrow:hover {
+  background-color: rgb(255, 255, 255, 1);
+}
+
 /* Show Scroll Up */
 
 /*=============== BREAKPOINTS ===============*/
