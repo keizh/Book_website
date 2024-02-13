@@ -1,0 +1,26 @@
+========== HEADER ==========
+.nav__logo
+E-Book
+
+.nav__link
+Home - Featured - Discount - New Books - Testimonial
+
+
+========== SEARCH  ==========
+.search__input placeholder
+What are you looking for?
+
+
+========== LOGIN ==========
+login__title
+Log In
+
+.login__label placeholder
+Email
+Write your email
+
+Password
+
+
+.footer__copy
+&#169; All Rights Reserved By Bedimcode
